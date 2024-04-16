@@ -1,0 +1,30 @@
+<app-layout
+  title="Entra com sua conta"
+  primaryBtnText="Login Agora"
+  secondaryBtnText="Signup Agora"
+  (submit)="submit()"
+  (navigate)="navigate()">
+
+  <form [formGroup]="loginForm">
+    <app-input
+      formControlName="email"
+      inputName="email"
+      type="email"
+      label="Email"
+      placeholder="email@gmail.com">
+
+      <img src="/assets/svg/">
+    </app-input>
+
+    <app-input
+      formControlName="password"
+      inputName="password"
+      type="password"
+      label="password">
+
+      <img src="/assets/svg/">
+    </app-input>
+
+  </form>
+
+</app-layout>
